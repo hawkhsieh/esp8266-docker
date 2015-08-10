@@ -9,7 +9,7 @@ run.sh
 https://github.com/esp8266/esp8266-wiki/wiki/Toolchain#64-bit-debian-linux<br/>
 裡面所安裝的套件，所以接下來只需要再參照<br/>
 https://github.com/esp8266/esp8266-wiki/wiki/Building<br/>
-為了開發方便，我已掛載esp8266的目錄到容器內的/home/esp8266/project裡面<br/>
+就可以開始編譯firmware。為了開發方便，我已掛載esp8266的目錄到容器內的/home/esp8266/project裡面<br/>
 因此，將你的程序放到假設是`esp8266/iot`，在容器裡面的位置就是`/home/esp8266/project/iot`。<br/>
 
 Enjoy!
