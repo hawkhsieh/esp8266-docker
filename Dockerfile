@@ -31,13 +31,11 @@ ENV PATH=/home/esp8266/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin:$PATH
 #
 # Setting up the Espressif SDK
 #
+ADD ./esp_iot_sdk_v1.2.0_15_07_03.zip /home/esp8266/Espressif/
 RUN sudo apt-get install -y unzip
 RUN cd /home/esp8266/Espressif && \
-    wget -O esp_iot_sdk_v0.9.3_14_11_21.zip https://github.com/esp8266/esp8266-wiki/raw/master/sdk/esp_iot_sdk_v0.9.3_14_11_21.zip && \
-    wget -O esp_iot_sdk_v0.9.3_14_11_21_patch1.zip https://github.com/esp8266/esp8266-wiki/raw/master/sdk/esp_iot_sdk_v0.9.3_14_11_21_patch1.zip && \
-    unzip -o esp_iot_sdk_v0.9.3_14_11_21.zip && \
-    unzip -o esp_iot_sdk_v0.9.3_14_11_21_patch1.zip && \
-    mv esp_iot_sdk_v0.9.3 ESP8266_SDK && \
+    unzip -o esp_iot_sdk_v1.2.0_15_07_03.zip && \
+    mv esp_iot_sdk_v1.2.0 ESP8266_SDK && \
     mv License ESP8266_SDK/
 #
 # Patching
