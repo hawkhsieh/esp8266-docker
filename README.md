@@ -3,14 +3,14 @@
 ```
 cd esp8266
 build.sh
-run.sh
+compile.sh
 ```
-執行run.sh隨後就會帶你進入容器裡面，裡面已經包含了<br/>
-https://github.com/esp8266/esp8266-wiki/wiki/Toolchain#64-bit-debian-linux<br/>
-裡面所安裝的套件，所以接下來只需要再參照<br/>
+這個執行環境裡面已經包含了最新的 espressif 1.2.0版<br/>
+http://espressif.com/new-sdk-release/<br/>
 https://github.com/esp8266/esp8266-wiki/wiki/Building<br/>
-就可以開始編譯firmware。為了開發方便，我已掛載esp8266的目錄到容器內的/home/esp8266/project裡面<br/>
-因此，將你的程序放到假設是`esp8266/iot`，在容器裡面的位置就是`/home/esp8266/project/iot`。<br/>
+
+已掛載esp8266的bin與user目錄到容器裡面<br/>
+因此，只需要執行`compile.sh`就可以編譯出`user`，並且韌體會放在`bin`下面。<br/>
 
 Enjoy!
 
