@@ -1,4 +1,4 @@
-# esp8266 deveopment with docker container
+# esp8266 easy deveopment environment
 安裝了docker後，進入此目錄：
 ```
 cd esp8266
