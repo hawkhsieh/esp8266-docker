@@ -10,7 +10,7 @@ http://espressif.com/new-sdk-release/<br/>
 https://github.com/esp8266/esp8266-wiki/wiki/Building<br/>
 
 已掛載esp8266的bin與user目錄到容器裡面<br/>
-因此，只需要執行`compile.sh`就可以編譯出`user`，並且韌體會放在`bin`下面。<br/>
+因此，只需要執行`compile.sh`就可以編譯`user`裡面的源碼，並且編譯出來的韌體會放在`bin`下面。<br/>
 
 Enjoy!
 
