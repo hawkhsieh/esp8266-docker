@@ -72,9 +72,11 @@ WORKDIR /home/esp8266
 #
 RUN git clone https://github.com/espressif/esp_iot_rtos_sdk
 RUN cp /home/esp8266/Espressif/ESP8266_SDK/lib/libhal.a /home/esp8266/esp_iot_rtos_sdk/lib/
-RUN cd /home/esp8266/esp_iot_rtos_sdk/app && chmod a+x ./gen_misc.sh &&  ./gen_misc.sh
 
-
+CMD cd /home/esp8266/esp_iot_rtos_sdk/app && \
+    chmod a+x ./gen_misc.sh && \
+    sudo chown -R esp8266 ../bin && \
+    ./gen_misc.sh
 
 
 
