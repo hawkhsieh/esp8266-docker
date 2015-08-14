@@ -15,10 +15,10 @@ https://github.com/esp8266/esp8266-wiki/wiki/Building<br/>
 Enjoy!
 
 --------------------------
-## English version
+
 After you install the docker, execute the `build.sh` script in this repository to build docker image.
-I think everything will be ok because docker's imagination.
-And then you just need `run.sh`. This will bring you into docker container.
+I think everything will be ok because docker's magic.
+And then you just need `compile.sh`. This will compile your code in `user` folder and release binary  into `bin` folder
 
 Refer to the url to build example or even yours!!
 https://github.com/esp8266/esp8266-wiki/wiki/Building
